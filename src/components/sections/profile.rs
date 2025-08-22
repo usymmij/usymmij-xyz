@@ -4,27 +4,29 @@ use leptos::prelude::*;
 #[component]
 pub fn Profile() -> impl IntoView {
     view! {
-        <div class="section_spacer"/>
-        <h3>About Me</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h3>Hi there!</h3>
+        <div class="text">
+            {"I'm currently a student at the "} // apostrophes :(
+            <a href="https://www.ece.utoronto.ca/" target="_blank">
+            University of Toronto
+            </a>
+            {" pursuing a MASc in ECE under the supervision of "}
+            <a href="https://www.eecg.utoronto.ca/~mcj/" target="_blank">
+            Mark C. Jeffrey
+            </a>,
+            working on ML accelerators.{" "}I previously also worked on closed form approaches for optimizers,
+            and led teams in competitive robotics as a participant and later on as a mentor.
+            <br/>
+            {"
+                
+            "}
 
 
-        </p>
+
+            <br/><br/><br/>
+            {"Academic Interests: Computer Architecture, Parallel Computing, ML Accelerators, and Applications in Scientific Computing"}
+
+
+        </div>
     }
 }

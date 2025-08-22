@@ -1,6 +1,10 @@
 use crate::components::counter_btn::Button;
+use crate::components::quote::Quote;
 use crate::components::sections::profile::Profile;
+use crate::components::sections::projects::Projects;
+use crate::components::sections::publications::Publications;
 use crate::components::sidebar::Sidebar;
+use crate::components::siteinfo::SiteInfo;
 use leptos::prelude::*;
 
 /// Default Home Page
@@ -26,24 +30,32 @@ pub fn Home() -> impl IntoView {
             }
         }>
 
-            <div class="pagecontainer">
-                <div class="sectioncontainer">
-                    <div class="section">
-                        <Profile />
-                    </div>
-                    <div class="section">
-                        <Profile />
-                    </div>
-                    <div class="section">
-                        <Profile />
-                    </div>
-                    <div class="section">
-                        <Profile />
-                    </div>
+        <div class="pagecontainer">
+           <div class="sectioncontainer">
+               <div class="top-spacer"/>
+               <div class="section" id="bio">
+                   <Profile />
+               </div>
 
-                </div>
-                <Sidebar/>
+               // add when pub lol
+               //<div class="section-spacer"/>
+               //<div class="section" id="publications">
+               //    <Publications />
+               //</div>
+
+               <div class="section-spacer"/>
+               <div class="section" id="projects">
+                   <Projects />
+               </div>
+
+            <Quote />
+
+            <br/>
+            <SiteInfo />
+
             </div>
+            <Sidebar/>
+        </div>
         </ErrorBoundary>
     }
 }

@@ -1,0 +1,213 @@
+/* --------------------- Open Props --------------------------- */
+/* the props */
+@import "https://unpkg.com/open-props";
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+/* ------------------------------------------------------------ */
+:root {
+  --sectionsplit: 70vw;
+  --sidesplit: 30vw;
+  font-family: JetBrains Mono;
+}
+
+body {
+  text-align: center;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(200, 20, 200);
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.pagecontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectioncontainer {
+  color: rgb(200, 200, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: var(--sectionsplit);
+  align-items: left;
+}
+.sectioncontainer .top-spacer {
+  height: 40vh;
+}
+.sectioncontainer .section-spacer {
+  height: 20vh;
+}
+.sectioncontainer .section {
+  padding-left: 10%;
+  margin-bottom: 10vh;
+}
+.sectioncontainer .section h3, .sectioncontainer .section h4, .sectioncontainer .section h5 {
+  color: rgb(200, 200, 220);
+  margin: 10pt;
+  border: 0em;
+  padding: 0em;
+  font-size: 22pt;
+  padding-left: 0.2em;
+  text-align: left;
+}
+.sectioncontainer .section h3 a, .sectioncontainer .section h4 a, .sectioncontainer .section h5 a {
+  font-size: 0.8em;
+}
+.sectioncontainer .section h3 img, .sectioncontainer .section h4 img, .sectioncontainer .section h5 img {
+  display: inline;
+  margin-left: 1em;
+  height: 1em;
+}
+.sectioncontainer .section div.text {
+  margin: 10pt;
+  display: block;
+  width: 80%;
+  border: 0em;
+  padding: 0em;
+  padding-left: 0.2em;
+  font-size: 12pt;
+  color: rgb(160, 160, 180);
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .sectioncontainer .section div.text {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .sectioncontainer .section {
+    width: 100%;
+    padding: 10%;
+  }
+}
+.sectioncontainer .site-info {
+  --fontsize: 0.9em;
+  display: relative;
+  text-align: center;
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: var(--fontsize);
+}
+.sectioncontainer .site-info img {
+  height: 15pt;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  align-items: top;
+  flex-direction: column;
+  justify-content: top;
+  right: 0pt;
+  width: var(--sidesplit);
+  height: 100vh;
+  background-color: rgb(40, 30, 50);
+}
+.sidebar .name {
+  padding: 0em;
+  padding-top: 10vh;
+}
+.sidebar .name h3 {
+  padding: 0.3em;
+}
+.sidebar .links {
+  width: 100%;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .links .extspacer {
+  flex-grow: 1;
+}
+.sidebar .links .inspacer {
+  width: 1em;
+}
+.sidebar .links img {
+  height: 1em;
+}
+.sidebar .links img.emdomain {
+  height: 1em;
+  padding-left: 1em;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    position: absolute;
+    justify-content: space-around;
+    align-items: bottom;
+    top: 2em;
+    height: 30vh;
+    width: 100vw;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+p,
+button {
+  margin: var(--size-6);
+}
+
+body > picture,
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 2rem;
+}
+
+.quotecontainer {
+  width: 100%;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 9pt;
+}
+.quotecontainer .quotespacer {
+  flex-grow: 1;
+}
+.quotecontainer .quote {
+  text-align: center;
+  width: 90%;
+}
+.quotecontainer .quotename {
+  text-align: right;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../public/styles.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;AAEA;AACQ;AAER;AACQ;AACA;AAER;AAEA;EACE;EACA;EACA;;;AAGF;EAEE;;;AAGF;AACA;EACE;;;AAGF;AACA;EACE;;;AAGF;AACA;EACE;;;AAGF;AACA;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAEF;EACE;;AAEF;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;;AAEF;EACE;EACA;EACA;;AAGJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;IACE;;;AAIN;EACE;IACE;IACA;;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;;;AAKN;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AACA;EACE;;AAGJ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;EACA;;;AAKN;EACE;IACE;IACA;IACA;IACA;IACA;IACA;;;AAIJ;EACE;EACA;;;AAGF;AAAA;AAAA;AAAA;AAAA;AAAA;EAME;EACA;EACA;;;AAGF;AAAA;EAEE;;;AAIF;AAAA;EAEI;EACA;EACA;EACA;EACA;;;AAGJ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;;AAEF;EACE;EACA;;AAEF;EACE%22,%22file%22:%22styles.css%22%7D */
