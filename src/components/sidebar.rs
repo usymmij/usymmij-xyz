@@ -5,7 +5,7 @@ pub fn Sidebar() -> impl IntoView {
     view! {
         <div class="sidebar">
             <div class="name">
-                <h3>"Jimmy Su"</h3>
+                <h3>{"Jimmy Su"}</h3>
             </div>
             <div class="links">
                 <div class="extspacer"/>
@@ -15,7 +15,7 @@ pub fn Sidebar() -> impl IntoView {
                 <div class="inspacer"/>
                 <div>
                    <img src="public/email.svg"/>
-                </div>: usymmij
+                </div>{": usymmij"}
                 <div>
                    <img class="emdomain" src="public/addr.png"/>
                 </div>

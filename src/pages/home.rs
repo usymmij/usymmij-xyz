@@ -1,4 +1,3 @@
-use crate::components::counter_btn::Button;
 use crate::components::quote::Quote;
 use crate::components::sections::profile::Profile;
 use crate::components::sections::projects::Projects;
@@ -13,7 +12,7 @@ pub fn Home() -> impl IntoView {
     view! {
         <ErrorBoundary fallback=|errors| {
             view! {
-                <h1>"I messed something up :/ sorry"</h1>
+                <h1>{"I messed something up :/ sorry"}</h1>
 
                 <p>"Errors: "</p>
                 // Render a list of errors as strings - good for development purposes

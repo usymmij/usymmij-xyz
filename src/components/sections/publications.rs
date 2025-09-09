@@ -4,7 +4,7 @@ use leptos::prelude::*;
 #[component]
 pub fn Publications() -> impl IntoView {
     view! {
-        <h3>Publications and Preprints</h3>
+        <h3>{"Publications and Preprints"}</h3>
         <div class="text">
         </div>
 

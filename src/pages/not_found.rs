@@ -5,7 +5,9 @@ use leptos::prelude::*;
 pub fn NotFound() -> impl IntoView {
     // TODO: SAD FACE public/sad.png
     view! {
-        <h1>"???" <br /> "Page not found :("</h1>
+        <h1>{"???"}
+            <br /> {"Page not found :("}
+        </h1>
         <br />
 
     }

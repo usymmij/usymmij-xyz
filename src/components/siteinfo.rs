@@ -5,7 +5,7 @@ pub fn SiteInfo() -> impl IntoView {
     view! {
 
     <div class="site-info">
-        made with {" "}
+        {"made with "}
         <a href="https://www.rust-lang.org/" target="_blank">
             <img src="./public/rustacean-flat-happy.svg"/>
         </a>

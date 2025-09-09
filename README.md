@@ -1,1 +1,5 @@
-Personal website for stuff
+# usymmij.xyz 
+
+Personal academic website
+
+> Built with Rust + Leptos, compiled with Trunk
