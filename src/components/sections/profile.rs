@@ -6,7 +6,7 @@ pub fn Profile() -> impl IntoView {
     view! {
         <h3>Hi there!</h3>
         <div class="text">
-            {"I'm currently a student at the "} // apostrophes :(
+            {"I'm Jimmy, and I'm currently a student at the "} // apostrophes :(
             <a href="https://www.ece.utoronto.ca/" target="_blank">
             {"University of Toronto"}
             </a>
@@ -14,12 +14,11 @@ pub fn Profile() -> impl IntoView {
             <a href="https://www.eecg.utoronto.ca/~mcj/" target="_blank">
             {"Mark C. Jeffrey"}
             </a>
-            {". My research focus is on advancements in computer systems for machine learning inference. I previously also worked on integrating closed form approaches with optimizers, and led teams in competitive robotics as a participant and later on as a mentor."}
+            {". My current research focus is on speculative techniques for transformer inference. I previously also worked on closed form optimization approaches, and led teams in competitive robotics as a participant and later on as a mentor."}
             <br/>
 
             <br/><br/><br/>
-            {"Academic Interests: Computer Architecture, Parallel Computing, ML Accelerators, and Applications in Scientific Computing"}
-
+            {"Academic Interests: Computer Systems/Architecture, Parallel Computing, and their applications in Machine Learning and Scientific Workloads"}
 
         </div>
     }

@@ -92,13 +92,13 @@ a:active {
       text-align: left;
     }
   
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       div.text {
         width: 100%;
       }
     }
   }
-  @media(max-width: 800px) {
+  @media(max-width: 1000px) {
     .section {
       width: 100%;
       padding: 10%;
@@ -119,6 +119,11 @@ a:active {
     }
   }
 }
+@media (max-width: 1000px) {
+  .sectioncontainer {
+    width: 100%;
+  }
+}
 
 .sidebar {
   position: fixed;
@@ -129,13 +134,30 @@ a:active {
   right: 0pt;
   width: var(--sidesplit);
   height: 100vh;
-  background-color: rgb(40,30,50);
+  background-color:rgb(33, 27, 54); //rgb(40,30,50);
 
   .name {
     padding: 0em;
     padding-top: 10vh;
     h3{
       padding: 0.3em;
+    }
+    div.emaddr{
+      width: 100%;
+      padding-top: 0em;
+      padding-left: 0em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      img.emdomain {
+        filter: brightness(1.0);
+        image-rendering: crisp-edges;
+        padding-top: 0.1em;
+        padding-left: 0.9em;
+        height: 1.1em;
+      }
     }
   }
   .links {
@@ -152,23 +174,26 @@ a:active {
       width: 1em;
     }
     img {
-      height: 1em;
+      filter: opacity(0.75);
+      height: 2em;
     }
-    img.emdomain {
-      height: 1em;
-      padding-left: 1em;
+    img:hover {
+      filter: opacity(1);
     }
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .sidebar {
     position: absolute;
-    justify-content: space-around;
+    justify-content: top;
     align-items: bottom;
-    top: 2em;
+    top: 0em;
     height: 30vh;
     width: 100vw;
+    .links {
+      padding-top: .5em;
+    }
   }
 }
 
