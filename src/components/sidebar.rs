@@ -37,6 +37,18 @@ pub fn Sidebar() -> impl IntoView {
                 //    <img src="public/bluesky.png"/>
                 // </a></div>
 
+                <div class="inspacer"/>
+                <div><a href="https://medium.usymmij.xyz" target="_blank">
+                   <img src="public/medium.png"/>
+                </a></div>
+
+
+                <div class="inspacer"/>
+                //<div><a href="https://typst.app/project/rqsaAJj7QQVKuC8nY4Y7e8" target="_blank">
+                <div><a href="public/full-cv.pdf" target="_blank">
+                    <img style="height: 1em" src="public/CV.png"/>
+                </a></div>
+
                 <div class="extspacer"/>
             </div>
 

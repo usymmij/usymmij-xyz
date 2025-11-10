@@ -12,6 +12,8 @@
 :root {
   --sectionsplit: 70vw;
   --sidesplit: 30vw;
+  --topspacerheight: 40vh;
+  --firstheight: 20vh;
   font-family: JetBrains Mono;
 }
 
@@ -22,12 +24,12 @@ body {
 
 /* unvisited link */
 a:link {
-  color: rgb(200,20,200);
+  color: rgb(220,22,220);
 }
 
 /* visited link */
 a:visited {
-  color: purple;
+  color: rgb(190,19,190);
 }
 
 /* mouse over link */
@@ -54,15 +56,17 @@ a:active {
   align-items: left;
 
   .top-spacer{
-    height: 40vh;
+    height: var(--topspacerheight);
   }
   .section-spacer{
-    height: 20vh;
+    height: 30vh;
+  }
+  #bio {
+    min-height: var(--firstheight);
   }
   .section {
     padding-left: 10%;
     margin-bottom: 10vh;
-    //min-height: 100vh;
     h3,h4,h5 {
       color: rgb(200,200,220);
       margin: 10pt;
@@ -134,7 +138,8 @@ a:active {
   right: 0pt;
   width: var(--sidesplit);
   height: 100vh;
-  background-color:rgb(33, 27, 54); //rgb(40,30,50);
+  background-color: rgb(0,0,0);
+  //background-color:rgb(33, 27, 54); //rgb(40,30,50);
 
   .name {
     padding: 0em;
